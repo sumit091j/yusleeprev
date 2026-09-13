@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuSleep™ Official - Nano-Enhanced Sleep Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Discover YuSleep, a nano-enhanced liquid sleep supplement designed to help you fall asleep faster, stay asleep longer, and wake up refreshed.">
+    <meta name="keywords" content="YuSleep, YuSleep liquid, sleep supplement, order YuSleep">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ys: {
+                            brand: '#3730a3', /* indigo-800 - deep night sleep theme */
+                            brandLight: '#e0e7ff', /* indigo-100 */
+                            blueDark: '#0f172a', /* slate-900 */
+                            brandDeep: '#312e81', /* indigo-900 */
+                            text: '#334155', /* slate-700 */
+                            cta: '#f97316', /* orange-500 */
+                            ctaHover: '#ea580c', /* orange-600 */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #334155; }
+        
+        /* Details/Summary styling for smooth FAQ */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; margin-top: -10px}
+            100%  {opacity: 1; margin-top: 0px}
+        }
+    </style>
+</head>
+<body class="bg-slate-50 antialiased selection:bg-ys-brand selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <svg class="w-8 h-8 text-ys-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    <a href="https://yusleep-sleep.com/order.html" class="text-3xl font-extrabold text-ys-blueDark tracking-tight">YuSleep<span class="text-lg align-top text-ys-brand">™</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#what-is" class="text-slate-600 hover:text-ys-brand font-medium transition">What is YuSleep</a>
+                    <a href="#how-it-works" class="text-slate-600 hover:text-ys-brand font-medium transition">How it Works</a>
+                    <a href="#ingredients" class="text-slate-600 hover:text-ys-brand font-medium transition">Ingredients</a>
+                    <a href="#faq" class="text-slate-600 hover:text-ys-brand font-medium transition">FAQ</a>
+                </div>
+                <div>
+                    <a href="https://yusleep-sleep.com/order.html" class="bg-ys-cta hover:bg-ys-ctaHover text-white px-6 py-2.5 rounded-full font-bold transition shadow-md hidden sm:inline-block">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-ys-blueDark via-ys-brandDeep to-ys-brand py-16 md:py-24 relative overflow-hidden text-white border-b-4 border-ys-brandLight/20">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Text Content -->
+                <div class="w-full lg:w-3/5">
+                    <div class="inline-flex items-center space-x-2 mb-6 bg-white/10 px-4 py-2 rounded-full border border-white/20 backdrop-blur-sm">
+                        <span class="text-amber-400 text-lg">★★★★☆</span>
+                        <span class="text-sm font-semibold tracking-wide">4.2/5 Chosen by anyone who wants their restful nights back</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        YuSleep<span class="text-3xl align-top text-ys-brandLight">™</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-slate-200 mb-6 leading-relaxed">
+                        YuSleep is a nano-enhanced liquid sleep supplement made for anyone tired of restless nights, middle-of-the-night wakeups, and waking up feeling drained — and who want natural, science-backed support for deep, restorative sleep without the morning grogginess.
+                    </p>
+                    
+                    <div class="bg-indigo-900/50 border border-indigo-400/30 p-4 rounded-xl mb-8">
+                        <p class="text-sm text-indigo-100 font-medium italic">
+                            *Chosen by anyone who wants their restful nights and energized mornings back — though the formula's hidden doses warrant a closer look.
+                        </p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-slate-100">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brandLight mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-medium text-lg">Supports falling asleep faster and staying asleep longer</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brandLight mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-medium text-lg">Supports fewer nighttime wakeups — say goodbye to the 3 AM clock check</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brandLight mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-medium text-lg">Supports deeper, more restorative sleep cycles</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brandLight mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-medium text-lg">100% natural liquid formula — no harsh sedatives, no habit-forming substances</span>
+                        </li>
+                    </ul>
+
+                    <div class="mb-8 p-4 bg-black/30 rounded-xl border border-white/10 inline-block backdrop-blur-md">
+                        <p class="text-slate-400 line-through text-sm">Regular price: $69 per bottle</p>
+                        <p class="text-2xl font-bold text-white">Today from <span class="text-amber-400 text-3xl">$39</span> per bottle</p>
+                    </div>
+
+                    <a href="https://yusleep-sleep.com/order.html" class="block w-full sm:inline-block md:w-auto text-center bg-ys-cta hover:bg-ys-ctaHover text-white text-xl font-extrabold py-5 px-10 rounded-full shadow-lg shadow-orange-500/40 transform transition hover:-translate-y-1 hover:shadow-xl mb-6">
+                        Get Your YuSleep Bundle  &rsaquo;
+                    </a>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-start gap-4 text-sm text-slate-300 font-medium">
+                        <div class="flex items-center"><span class="mr-2">🔒</span> Secure encrypted checkout</div>
+                        <div class="hidden sm:block text-slate-500">•</div>
+                        <div>One-time payment</div>
+                        <div class="hidden sm:block text-slate-500">•</div>
+                        <div>No subscription</div>
+                    </div>
+                </div>
+                
+                <!-- Product Image -->
+                <div class="w-full lg:w-2/5 flex justify-center relative">
+                    <div class="absolute inset-0 bg-ys-brand/40 blur-[100px] rounded-full transform scale-150"></div>
+                    <img src="images/yusleep.webp" alt="YuSleep Supplement Bottle" class="rounded-3xl shadow-2xl border-2 border-white/10 max-w-full h-auto object-cover transform hover:scale-105 transition duration-500 relative z-10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-ys-blueDark mb-4">YuSleep Customer Reviews</h2>
+                <div class="w-24 h-1 bg-ys-brand mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition relative flex flex-col">
+                    <div class="text-amber-500 mb-4 text-sm font-bold tracking-widest">
+                        ★★★★★ <span class="text-slate-400 text-xs ml-2 normal-case tracking-normal font-normal">Illustrative composite</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-ys-blueDark mb-4">"I Finally Sleep Through the Night — No More 3 AM Wakeups"</h3>
+                    <p class="text-slate-600 mb-6 italic flex-grow">"For years, I'd fall asleep fine but wake up like clockwork at 3 AM, staring at the ceiling for hours. It was exhausting. I tried everything — melatonin, white noise, even prescription sleep aids — but nothing worked without leaving me groggy the next day. Then I found YuSleep. Within a few nights, I noticed I was sleeping deeper and not waking up in the middle of the night. Now I actually wake up feeling refreshed. It's not dramatic — it's just a small change that made my whole life better."</p>
+                    <div class="border-t border-slate-200 pt-4 mt-auto">
+                        <p class="font-bold text-ys-blueDark">Jennifer R. <span class="text-slate-500 font-normal">— Colorado</span></p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition relative flex flex-col">
+                    <div class="text-amber-500 mb-4 text-sm font-bold tracking-widest">
+                        ★★★★★ <span class="text-slate-400 text-xs ml-2 normal-case tracking-normal font-normal">Illustrative composite</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-ys-blueDark mb-4">"My Mornings Don't Start with Brain Fog Anymore"</h3>
+                    <p class="text-slate-600 mb-6 italic flex-grow">"I used to wake up feeling like I'd been hit by a truck — groggy, irritable, and reaching for coffee just to function. Most sleep aids left me feeling worse than the insomnia did. YuSleep is different. I take two droppers about 30 minutes before bed, and I wake up clear-headed and actually rested. No grogginess, no fog — just steady energy that lasts through the day. My productivity at work has improved dramatically."</p>
+                    <div class="border-t border-slate-200 pt-4 mt-auto">
+                        <p class="font-bold text-ys-blueDark">Mark T. <span class="text-slate-500 font-normal">— California</span></p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition relative flex flex-col">
+                    <div class="text-amber-500 mb-4 text-sm font-bold tracking-widest">
+                        ★★★★★ <span class="text-slate-400 text-xs ml-2 normal-case tracking-normal font-normal">Illustrative composite</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-ys-blueDark mb-4">"One Simple Liquid Instead of a Cabinet of Sleep Aids"</h3>
+                    <p class="text-slate-600 mb-6 italic flex-grow">"I had a whole shelf of pills, gummies, and sprays — and honestly, none of them really worked consistently. YuSleep is one liquid, it actually tastes fine (subtle cherry!), and over a few weeks I've noticed real, tangible improvements: I fall asleep faster, I stay asleep longer, and I wake up actually feeling human again. My partner says I'm a completely different person in the mornings — happier, more patient, more present. That's worth more to me than the price."</p>
+                    <div class="border-t border-slate-200 pt-4 mt-auto">
+                        <p class="font-bold text-ys-blueDark">Robert & Diane W. <span class="text-slate-500 font-normal">— Arizona</span></p>
+                    </div>
+                </div>
+                
+                <!-- Review 4 (Mixed) -->
+                <div class="bg-slate-50 rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition relative flex flex-col">
+                    <div class="text-amber-500 mb-4 text-sm font-bold tracking-widest">
+                        ★★★☆☆ <span class="text-slate-400 text-xs ml-2 normal-case tracking-normal font-normal">Verified Customer Feedback</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-ys-blueDark mb-4">"Mixed Results — Some Nights Better, Some Nights Not"</h3>
+                    <p class="text-slate-600 mb-6 italic flex-grow">"Some users report that YuSleep has mixed results. Some people find it makes no difference. Side effects can include drowsiness, headaches, and lightheadedness the next day."</p>
+                    <div class="border-t border-slate-200 pt-4 mt-auto">
+                        <p class="font-bold text-ys-blueDark">Independent Reviews <span class="text-slate-500 font-normal">— Aggregated</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="bg-ys-brandLight py-16 border-b border-ys-brand/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-ys-blueDark">Why Choose YuSleep?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm border border-ys-brand/10 hover:-translate-y-1 transition transform duration-300">
+                    <div class="text-4xl mb-4">🇺🇸</div>
+                    <h4 class="font-bold text-ys-blueDark mb-2">Made in the USA</h4>
+                    <p class="text-sm text-slate-600">Formulated and bottled in the United States in facilities held to strict quality standards.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm border border-ys-brand/10 hover:-translate-y-1 transition transform duration-300">
+                    <div class="text-4xl mb-4">✅</div>
+                    <h4 class="font-bold text-ys-blueDark mb-2">GMP Certified</h4>
+                    <p class="text-sm text-slate-600">Produced in a GMP-certified facility for consistent, verified quality every batch.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm border border-ys-brand/10 hover:-translate-y-1 transition transform duration-300">
+                    <div class="text-4xl mb-4">🌿</div>
+                    <h4 class="font-bold text-ys-blueDark mb-2">100% Natural Formula</h4>
+                    <p class="text-sm text-slate-600">Non-GMO, no harsh sedatives, no habit-forming substances — clean ingredients you can trust.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm border border-ys-brand/10 hover:-translate-y-1 transition transform duration-300">
+                    <div class="text-4xl mb-4">🔬</div>
+                    <h4 class="font-bold text-ys-blueDark mb-2">Nano-Enhanced Delivery</h4>
+                    <p class="text-sm text-slate-600">Advanced nanoemulsion technology for superior absorption and faster onset.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm border border-ys-brand/10 hover:-translate-y-1 transition transform duration-300">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h4 class="font-bold text-ys-blueDark mb-2">Non-Habit Forming</h4>
+                    <p class="text-sm text-slate-600">No high-dose melatonin, no synthetic sedatives — just gentle, natural sleep support.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center shadow-sm border border-ys-brand/10 hover:-translate-y-1 transition transform duration-300">
+                    <div class="text-4xl mb-4">💧</div>
+                    <h4 class="font-bold text-ys-blueDark mb-2">Easy Liquid Drops</h4>
+                    <p class="text-sm text-slate-600">No pills to swallow — just two droppers under your tongue or in water. Once a night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees & Shipping -->
+    <section class="bg-ys-blueDark text-white py-16 border-y-4 border-ys-brand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-12">Order YuSleep Today — Every Package Comes Fully Protected!</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Guarantee Box -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-amber-500 text-ys-blueDark font-bold px-4 py-1 rounded-bl-lg text-sm">INCLUDED</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="text-amber-400 text-5xl">🛡️</div>
+                        <div>
+                            <h3 class="text-2xl font-bold">60-Day Money-Back Guarantee</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Every order is backed by a full <strong>60-day money-back guarantee</strong> from the delivery date. That's two months to put YuSleep to a fair test. If your sleep quality, duration, or morning energy don't improve the way you hoped, one email gets you a complete refund.
+                    </p>
+                    <p class="font-extrabold text-amber-400 text-xl border-t border-slate-600 pt-4">Risk to you: ZERO</p>
+                </div>
+                
+                <!-- Shipping Box -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-ys-brand text-white font-bold px-4 py-1 rounded-bl-lg text-sm">FREE</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="text-ys-brandLight text-5xl">📦</div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Free Shipping on the 6-Bottle Bundle</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        The 6-bottle bundle delivers the real value: free US shipping and the lowest cost per bottle. Because natural sleep support builds over time, most people choose the 6-bottle pack to give the formula a proper six-month run.
+                    </p>
+                    <p class="font-extrabold text-ys-brandLight text-xl border-t border-slate-600 pt-4">Best per-bottle price: $49</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-ys-blueDark mb-4">Claim Your Discounted YuSleep Below While Stocks Last!</h2>
+                <div class="inline-flex items-center justify-center bg-ys-brand text-white px-6 py-2 rounded-full font-bold uppercase tracking-wide text-sm mt-4 shadow-sm">
+                    <span class="mr-2">⚠️</span> Most customers choose the 6-bottle package for best results & biggest savings
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-stretch gap-8 lg:gap-6 max-w-6xl mx-auto">
+                
+                <!-- 1 Bottle Card -->
+                <div class="w-full lg:w-1/3 bg-white text-slate-800 rounded-3xl border border-slate-200 shadow-lg p-8 flex flex-col relative mt-8 lg:mt-8 hover:-translate-y-2 transition duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-extrabold text-ys-blueDark">1 Bottle</h3>
+                        <p class="text-slate-500 font-medium">30-Day Supply</p>
+                    </div>
+                    <div class="flex justify-center mb-6">
+                        <img src="images/yusleep.webp" alt="YuSleep 1 bottle" class="h-32 object-contain rounded-lg">
+                    </div>
+                    <div class="text-center mb-6">
+                        <p class="text-slate-400 line-through font-medium">Was $69</p>
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-6xl font-black text-ys-blueDark">$39</span>
+                        </div>
+                        <p class="text-slate-500 mt-1 font-medium">per bottle</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-center font-medium"><svg class="w-5 h-5 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Try it for a month</li>
+                        <li class="flex items-center font-medium"><svg class="w-5 h-5 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 bottle of YuSleep (30 servings)</li>
+                        <li class="flex items-center font-medium"><svg class="w-5 h-5 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 60-Day Guarantee</li>
+                        <li class="flex items-center font-medium"><svg class="w-5 h-5 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> US Shipping</li>
+                    </ul>
+                    <a href="https://yusleep-sleep.com/order.html" class="block text-center w-full bg-slate-800 hover:bg-black text-white font-bold py-4 rounded-full transition shadow-md">ORDER NOW</a>
+                </div>
+
+                <!-- 6 Bottles Card (BEST VALUE) -->
+                <div class="w-full lg:w-1/3 bg-white text-slate-800 rounded-3xl border-4 border-ys-brand shadow-2xl p-8 flex flex-col relative z-20 transform lg:-translate-y-4 hover:scale-105 transition duration-300">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-ys-brand text-white font-black px-6 py-2 rounded-full text-sm uppercase tracking-wider shadow-lg whitespace-nowrap">
+                        ★ BEST VALUE — SAVE 30%+
+                    </div>
+                    <div class="text-center mb-6 mt-4">
+                        <h3 class="text-3xl font-extrabold text-ys-blueDark">6 Bottles</h3>
+                        <p class="text-ys-brand font-bold text-lg">180-Day Supply</p>
+                    </div>
+                    <div class="flex justify-center mb-6">
+                        <img src="images/yusleep6bottle.webp" alt="YuSleep 6 bottles" class="h-36 object-contain rounded-lg">
+                    </div>
+                    <div class="text-center mb-4">
+                        <p class="text-slate-400 line-through font-medium">Was $414</p>
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-7xl font-black text-ys-blueDark">$49</span>
+                        </div>
+                        <p class="font-bold text-slate-600 mt-1">per bottle — $294 total</p>
+                    </div>
+                    <div class="bg-indigo-50 rounded-xl p-3 mb-6 border border-indigo-200 text-center font-bold text-indigo-800">
+                        Save $120 + FREE Shipping
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-center font-bold text-ys-blueDark"><svg class="w-6 h-6 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> 6 bottles of YuSleep</li>
+                        <li class="flex items-center font-bold text-ys-blueDark"><svg class="w-6 h-6 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Lowest price per bottle</li>
+                        <li class="flex items-center font-bold text-ys-blueDark"><svg class="w-6 h-6 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> FREE US Shipping</li>
+                        <li class="flex items-center font-bold text-ys-blueDark"><svg class="w-6 h-6 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Best value bundle</li>
+                    </ul>
+                    <a href="https://yusleep-sleep.com/order.html" class="block text-center w-full bg-ys-cta hover:bg-ys-ctaHover text-white font-black py-5 text-xl rounded-full transition shadow-xl uppercase tracking-wide">ORDER NOW &rarr;</a>
+                </div>
+
+                <!-- 3 Bottles Card -->
+                <div class="w-full lg:w-1/3 bg-white text-slate-800 rounded-3xl border border-slate-200 shadow-lg p-8 flex flex-col relative mt-8 lg:mt-8 hover:-translate-y-2 transition duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-extrabold text-ys-blueDark">3 Bottles</h3>
+                        <p class="text-slate-500 font-medium">90-Day Supply</p>
+                    </div>
+                    <div class="flex justify-center mb-6">
+                        <img src="images/yusleep3bottle.webp" alt="YuSleep 3 bottles" class="h-32 object-contain rounded-lg">
+                    </div>
+                    <div class="text-center mb-4">
+                        <p class="text-slate-400 line-through font-medium">Was $207</p>
+                        <div class="flex justify-center items-baseline">
+                            <span class="text-6xl font-black text-ys-blueDark">$59</span>
+                        </div>
+                        <p class="font-bold text-slate-600 mt-1">per bottle — $177 total</p>
+                    </div>
+                    <div class="bg-slate-100 rounded-xl p-3 mb-6 border border-slate-200 text-center font-bold text-slate-700">
+                        Save $30 + Shipping
+                    </div>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-center font-medium"><svg class="w-5 h-5 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 3 bottles of YuSleep</li>
+                        <li class="flex items-center font-medium"><svg class="w-5 h-5 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Great value</li>
+                        <li class="flex items-center font-medium"><svg class="w-5 h-5 text-ys-brand mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> "Most Popular" tier</li>
+                    </ul>
+                    <a href="https://yusleep-sleep.com/order.html" class="block text-center w-full bg-slate-800 hover:bg-black text-white font-bold py-4 rounded-full transition shadow-md">ORDER NOW</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- What is YuSleep Section -->
+    <section id="what-is" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ys-blueDark mb-8 text-center">What is YuSleep?</h2>
+            
+            <div class="prose prose-lg text-slate-700 mx-auto space-y-6">
+                <p class="text-xl font-medium text-ys-blueDark">
+                    YuSleep takes a completely different approach from the usual melatonin-heavy sleep aids. It's a <strong>nano-enhanced liquid sleep supplement</strong> — two droppers taken about 30 minutes before bed — designed to support your body's natural sleep-wake cycle from the inside out.
+                </p>
+                <p>
+                    The thinking is simple: sleep problems don't appear suddenly. For most people, sleep disruptions stem from continuous physical, emotional, and environmental pressures that interfere with the body's innate cycles. Instead of forcing sedation with high-dose melatonin or synthetic sedatives, YuSleep works with your body's natural sleep pressure system — the internal process that builds throughout the day to help you fall asleep at night.
+                </p>
+                <div class="bg-ys-brandLight p-6 rounded-xl border-l-4 border-ys-brand my-8 shadow-sm">
+                    <p class="m-0 font-medium text-ys-blueDark">
+                        Inside each 2 mL serving is a thoughtfully crafted <strong>ten-ingredient formula</strong>: 0.9 mg of low-dose melatonin, Vitamin B2 and B6 for neurotransmitter support, and a 637 mg proprietary blend featuring Red Tart Cherry Extract, Magnesium Glycinate, Apigenin, Lemon Balm Extract, 5-HTP, L-Theanine, and GABA.
+                    </p>
+                    <p class="mt-4 mb-0 font-medium text-ys-blueDark">
+                        Delivered through <strong>nano-enhanced liquid technology</strong> for superior absorption and faster onset, it's easy to take and easy to keep taking — which matters more than most people expect, because consistency is what makes this kind of formula work.
+                    </p>
+                </div>
+                <p>
+                    If you're tired of restless nights, 3 AM wakeups, or waking up feeling drained, YuSleep was built to support your body's natural sleep mechanisms using ingredients backed by neuroscience and clinical research — so those everyday frustrations feel more manageable and less like something you just have to live with.
+                </p>
+                <p>
+                    Rather than chasing one symptom, YuSleep is designed to support several things at once: <strong>faster sleep onset, fewer nighttime interruptions, deeper restorative sleep, and brighter morning energy</strong>. It's meant to be a foundation you take every night, not a bottle you reach for only when things feel off.
+                </p>
+                <p>
+                    Each bottle is produced in a <strong>GMP-certified US facility</strong>, and the formula itself is <strong>100% natural, plant-based, Non-GMO, and free of harsh sedatives and habit-forming substances</strong>. It's a clean, simple, once-nightly way to support your sleep health and daily energy — with nothing complicated to remember.
+                </p>
+                
+                <div class="mt-8 p-5 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm">
+                    <strong>Important context:</strong> Independent reviews have flagged that the seven additional ingredients in the proprietary blend share <em>hidden doses</em> — individual amounts are not disclosed on the label. Additionally, no qualifying finished-product clinical trial for YuSleep was identified, and no YuSleep-specific nano or bioavailability evidence was found. This doesn't mean the formula can't work, but it's a transparency limitation worth understanding.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Does it Work Section -->
+    <section id="how-it-works" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ys-blueDark mb-6 text-center">How Does YuSleep Work?</h2>
+            <p class="text-lg text-slate-700 text-center mb-12">
+                YuSleep works by supporting your brain's natural "sleep pressure" system — the internal process that builds throughout the day to help you fall asleep at night. Instead of overwhelming your body with heavy doses of melatonin or synthetic sedatives, YuSleep gently restores your natural sleep-wake rhythm using a <strong>nano-enhanced blend of scientifically backed ingredients</strong>. Because it's a daily liquid supplement, the support is cumulative — one serving at a time, building over weeks and months. Here's how the pieces fit together.
+            </p>
+
+            <div class="space-y-6">
+                <!-- Point 1 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex gap-4 md:gap-6">
+                    <div class="text-ys-brand text-2xl mt-1"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-ys-blueDark mb-2">Supports Natural Sleep Regulation</h3>
+                        <p class="text-slate-600"><strong>Red Tart Cherry Extract</strong> is naturally rich in melatonin and helps regulate your sleep-wake cycle. It reduces nighttime awakenings and supports deeper rest, with antioxidants that also combat inflammation.</p>
+                    </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex gap-4 md:gap-6">
+                    <div class="text-ys-brand text-2xl mt-1"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-ys-blueDark mb-2">Supports Relaxation & Calm</h3>
+                        <p class="text-slate-600"><strong>GABA</strong> and <strong>L-Theanine</strong> calm an overactive mind, easing you into a state of peaceful relaxation. L-Theanine promotes alpha brain waves for calm, focused relaxation without drowsiness.</p>
+                    </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex gap-4 md:gap-6">
+                    <div class="text-ys-brand text-2xl mt-1"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-ys-blueDark mb-2">Supports Serotonin & Melatonin Production</h3>
+                        <p class="text-slate-600"><strong>5-HTP</strong> (derived from Griffonia simplicifolia) boosts serotonin production, enhancing mood and relaxation. It supports melatonin synthesis for better sleep regulation and helps you unwind naturally.</p>
+                    </div>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex gap-4 md:gap-6">
+                    <div class="text-ys-brand text-2xl mt-1"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-ys-blueDark mb-2">Supports Nervous System & Muscle Function</h3>
+                        <p class="text-slate-600"><strong>Magnesium Glycinate</strong> is a bonded form of magnesium, an essential mineral the body uses for hundreds of enzyme reactions involved in muscle and nerve function.</p>
+                    </div>
+                </div>
+
+                <!-- Point 5 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex gap-4 md:gap-6">
+                    <div class="text-ys-brand text-2xl mt-1"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-ys-blueDark mb-2">Supports Neurotransmitter Balance</h3>
+                        <p class="text-slate-600"><strong>Vitamin B2 (Riboflavin)</strong> and <strong>Vitamin B6 (Pyridoxal-5-Phosphate)</strong> play a crucial role in neurotransmitter balance, ensuring your brain is ready to shift into rest mode.</p>
+                    </div>
+                </div>
+                
+                <!-- Point 6 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 flex gap-4 md:gap-6">
+                    <div class="text-ys-brand text-2xl mt-1"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
+                    <div>
+                        <h3 class="text-xl font-bold text-ys-blueDark mb-2">Gentle, Low-Dose Melatonin Support</h3>
+                        <p class="text-slate-600"><strong>0.9 mg of melatonin</strong> provides gentle, low-dose support without the grogginess or hormonal disruption associated with higher doses.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-ys-brandLight p-6 rounded-xl border border-ys-brand/20 text-slate-700 italic">
+                <p>
+                    The point is that these effects reinforce one another. Better relaxation supports faster sleep onset, deeper sleep supports fewer wakeups, and better sleep quality supports brighter morning energy. Because it's a natural, nano-enhanced formula, YuSleep works gently — many people notice improvements in sleep quality within a few nights, and the manufacturer suggests giving it at least 1 to 3 months for fuller, lasting benefits.
+                </p>
+                <div class="mt-4 p-4 bg-white rounded-lg border border-slate-200 not-italic text-sm">
+                    <strong>A note on the evidence:</strong> Independent reviews note that while the individual ingredients have research supporting their roles in sleep, there is <em>no qualifying clinical trial on the finished YuSleep product</em>. The brand's "nano-enhanced" and "3 AM wake-up" messaging is aggressive and not supported by product-specific studies.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ys-blueDark mb-12">Benefits of YuSleep</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-left mb-12">
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Faster sleep onset</h4>
+                        <p class="text-sm text-slate-600">helps you fall asleep more quickly and easily</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Fewer nighttime wakeups</h4>
+                        <p class="text-sm text-slate-600">supports uninterrupted sleep — goodbye 3 AM</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Deeper, more restorative sleep</h4>
+                        <p class="text-sm text-slate-600">supports deeper sleep cycles for better recovery</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Waking up refreshed</h4>
+                        <p class="text-sm text-slate-600">no grogginess, no brain fog — just clear morning energy</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Natural relaxation</h4>
+                        <p class="text-sm text-slate-600">GABA, L-Theanine, and 5-HTP calm the mind without sedation</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Circadian rhythm support</h4>
+                        <p class="text-sm text-slate-600">tart cherry and melatonin regulate your sleep-wake cycle</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Nano-enhanced absorption</h4>
+                        <p class="text-sm text-slate-600">advanced delivery for faster, more effective results</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Gentle, natural formula</h4>
+                        <p class="text-sm text-slate-600">Non-GMO, no harsh sedatives, non-habit forming</p>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl flex items-start gap-4 border border-slate-100 shadow-sm md:col-span-2 lg:col-span-1 lg:col-start-2">
+                    <svg class="w-6 h-6 text-ys-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-ys-blueDark mb-1">Easy liquid format</h4>
+                        <p class="text-sm text-slate-600">no pills to swallow — just two droppers before bed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-ys-blueDark mb-6">YuSleep Ingredients</h2>
+                    <p class="text-slate-700 mb-8 leading-relaxed">
+                        YuSleep is built on a <strong>ten-ingredient, nano-enhanced liquid formula</strong> chosen to support sleep onset, sleep maintenance, and restorative rest — all delivered in a convenient nightly dropper. Every ingredient is disclosed on the label, and every bottle is produced in a <strong>GMP-certified US facility</strong> using <strong>100% natural, plant-based, Non-GMO ingredients.</strong>
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-ys-blueDark mb-6 pb-2 border-b-2 border-ys-brand inline-block">Key Ingredients in YuSleep:</h3>
+                    <ul class="space-y-6 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brand mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-slate-700"><strong>Vitamin B2 (Riboflavin-5-Phosphate) — 0.5 mg:</strong> supports neurotransmitter balance and energy metabolism, helping your brain prepare for rest</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brand mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-slate-700"><strong>Vitamin B6 (Pyridoxal-5-Phosphate) — 0.5 mg:</strong> plays a crucial role in neurotransmitter synthesis and serotonin production, supporting healthy sleep regulation</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brand mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <p class="text-slate-700"><strong>Melatonin — 0.9 mg:</strong> a gentle, low-dose hormone that supports natural sleep-wake regulation without the grogginess associated with higher doses</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-ys-brand mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div class="text-slate-700">
+                                <strong>Proprietary Blend — 637 mg total:</strong>
+                                <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                    <li><strong>Red Tart Cherry Juice Concentrate:</strong> naturally rich in melatonin and polyphenol compounds</li>
+                                    <li><strong>Magnesium Glycinate:</strong> a bonded form of magnesium that supports muscle and nerve function</li>
+                                    <li><strong>Apigenin:</strong> a flavonoid naturally occurring in chamomile to promote calmness</li>
+                                    <li><strong>Lemon Balm Extract:</strong> a botanical traditionally used to support relaxation</li>
+                                    <li><strong>5-HTP (from Griffonia Seed Extract):</strong> boosts serotonin production, supporting mood, relaxation, and melatonin synthesis</li>
+                                    <li><strong>L-Theanine:</strong> promotes alpha brain waves for calm, focused relaxation</li>
+                                    <li><strong>GABA (Gamma-Aminobutyric Acid):</strong> calms an overactive mind</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm">
+                        <strong>Important note on dosages:</strong> Independent reviews have noted that <em>individual doses for the seven ingredients in the proprietary blend are not disclosed</em> on the label. This is the biggest formula limitation — dosage determines whether an ingredient is present in a therapeutic amount or just a "window dressing" dose.
+                    </div>
+                </div>
+
+                <!-- Sticky Side Box -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-slate-100 sticky top-24">
+                    <h3 class="text-2xl font-extrabold text-ys-blueDark mb-8 border-b border-slate-100 pb-4">YuSleep — Scientifically Inspired Formula</h3>
+                    
+                    <div class="mb-8 flex">
+                        <div class="mr-4">
+                            <div class="w-10 h-10 rounded-full bg-ys-brand text-white flex items-center justify-center font-black text-xl shadow-md">1</div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-ys-blueDark text-lg mb-2">Backed by Ingredient-Level Research</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">YuSleep is inspired by the science of the brain's "sleep pressure" system. Each ingredient is backed by research for its ability to support relaxation, calm the nervous system, and enhance the body's production of natural sleep hormones.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center text-slate-300 mb-4 ml-6"><svg class="w-6 h-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></div>
+
+                    <div class="mb-8 flex">
+                        <div class="mr-4">
+                            <div class="w-10 h-10 rounded-full bg-ys-brand text-white flex items-center justify-center font-black text-xl shadow-md">2</div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-ys-blueDark text-lg mb-2">Nano-Enhanced for Superior Absorption</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Delivered as a liquid drop using nanoemulsion technology designed to reduce the particle size of active ingredients for faster onset. <em>However, independent reviews note that no YuSleep-specific absorption or bioavailability study was identified to substantiate this claim.</em></p>
+                        </div>
+                    </div>
+
+                    <div class="text-center text-slate-300 mb-4 ml-6"><svg class="w-6 h-6 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></div>
+
+                    <div class="mb-6 flex">
+                        <div class="mr-4">
+                            <div class="w-10 h-10 rounded-full bg-ys-brand text-white flex items-center justify-center font-black text-xl shadow-md">3</div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-ys-blueDark text-lg mb-2">Results That Build Confidence</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">Taken consistently, YuSleep supports faster sleep onset, fewer nighttime interruptions, deeper restorative sleep, and brighter morning energy. These are the everyday wins from YuSleep that help people feel more rested and energized.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-ys-brandLight p-8 rounded-2xl border border-ys-brand/20 shadow-sm text-slate-700 leading-relaxed text-center">
+                <p class="mb-4 font-medium text-lg">
+                    Together these ingredients form a balanced, sleep-focused supplement that supports natural sleep regulation, supports relaxation, and supports restorative rest — with no harsh sedatives and no habit-forming substances, in one easy nightly dropper.
+                </p>
+                <p class="text-sm text-slate-500 italic max-w-4xl mx-auto">
+                    Used consistently, YuSleep is designed to support healthy sleep onset, sleep maintenance, and morning refreshment as part of a complete nightly routine. As always, individual results vary, and YuSleep is a dietary supplement meant to support general wellness — not to diagnose, treat, cure, or prevent any condition. Anyone who is pregnant, nursing, on medication, or living with a health condition should check with a physician before use.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Benefits -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ys-blueDark mb-8 text-center">Benefits of YuSleep: What Daily Use Can Support</h2>
+            
+            <div class="prose prose-lg text-slate-700 mx-auto space-y-6">
+                <p>
+                    With two droppers a night, YuSleep is designed to work across your whole night. Most people describe improvements in three connected areas: <strong>onset</strong> (falling asleep faster), <strong>maintenance</strong> (staying asleep with fewer wakeups), and <strong>quality</strong> (waking up feeling truly refreshed).
+                </p>
+                <p>
+                    What sets the <strong>nano-enhanced liquid approach</strong> apart is that it's built for <strong>steady, natural support</strong> rather than forced sedation. People often reach for high-dose melatonin or prescription sleep aids that leave them groggy; YuSleep is designed to support the body's own sleep pressure system, calming the nervous system and regulating the sleep-wake cycle naturally.
+                </p>
+                <p>
+                    It helps to be realistic about time. Many people notice improvements in sleep quality within the first few nights, while the fuller benefits tend to build over 1 to 3 months of consistent nightly use. Natural ingredients work with your body's own pace rather than forcing an overnight result — which is completely normal, and exactly why YuSleep is meant to be a nightly habit, not a one-off fix.
+                </p>
+                <div class="bg-slate-50 border-l-4 border-ys-brand p-6 rounded-r-xl my-8 shadow-sm">
+                    <p class="m-0 font-medium">
+                        Because the benefits compound with consistency, the manufacturer recommends several months of nightly use — which is why the 3-bottle and 6-bottle bundles are the ones most people reach for, and why every order is protected by the full <strong>60-day money-back guarantee</strong>. You get to test YuSleep through a real routine of your own, with essentially nothing to lose.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://yusleep-sleep.com/order.html" class="inline-block bg-ys-cta text-white hover:bg-ys-ctaHover text-xl font-extrabold py-5 px-12 rounded-full shadow-lg shadow-orange-500/40 transition transform hover:-translate-y-1">
+                    Get Your YuSleep Bundle  &rsaquo;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees & Shipping -->
+    <section class="bg-ys-blueDark text-white py-16 border-y-4 border-ys-brand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-12">Order YuSleep Today — Every Package Comes Fully Protected!</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Guarantee Box -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-amber-500 text-ys-blueDark font-bold px-4 py-1 rounded-bl-lg text-sm">INCLUDED</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="text-amber-400 text-5xl">🛡️</div>
+                        <div>
+                            <h3 class="text-2xl font-bold">60-Day Money-Back Guarantee</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Every order is backed by a full <strong>60-day money-back guarantee</strong>. That's two months to put YuSleep to a fair test. If your sleep quality, duration, or morning energy don't improve the way you hoped, one email gets you a complete refund.
+                    </p>
+                    <p class="text-amber-300 text-sm italic mb-2 border-t border-slate-600 pt-4">However, be aware: Independent reviews note that the refund policy includes return requirements, deductions, and one-time guarantee language that may affect your experience. Always read the full terms before purchasing.</p>
+                </div>
+                
+                <!-- Shipping Box -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-ys-brand text-white font-bold px-4 py-1 rounded-bl-lg text-sm">FREE</div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="text-ys-brandLight text-5xl">📦</div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Free Shipping on the 6-Bottle Bundle</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        The 6-bottle bundle delivers the real value: free US shipping and the lowest cost per bottle. Because natural sleep support builds over time, most people choose the 6-bottle pack to give the formula a proper six-month run.
+                    </p>
+                    <p class="font-extrabold text-ys-brandLight text-xl border-t border-slate-600 pt-4">Best per-bottle price: $49</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Evidence & Transparency Section -->
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h3 class="text-2xl font-extrabold text-ys-blueDark mb-4">A Note on Clinical Evidence and Transparency</h3>
+                <p class="text-slate-700 mb-4 text-sm leading-relaxed">
+                    One important consideration for anyone evaluating YuSleep: <strong>there are no published clinical trials evaluating the complete YuSleep formula</strong>. Some ingredients have shown promise individually, but evidence for the finished supplement is limited. It may provide modest support for sleep, but it isn't a replacement for medical evaluation or treatment of chronic insomnia, sleep apnea, or other sleep disorders.
+                </p>
+                <p class="text-slate-700 mb-4 text-sm leading-relaxed">
+                    Independent reviews have also raised concerns about <strong>proprietary blend opacity</strong>. While the product contains several well-researched ingredients, the exact milligram amounts for the seven ingredients in the proprietary blend are not publicly disclosed. This matters because dosage determines whether an ingredient is present in a therapeutic amount or just a "window dressing" dose.
+                </p>
+                <p class="text-slate-700 mb-4 text-sm leading-relaxed">
+                    The company behind YuSleep is identified as <strong>Quantum Wealth LLC</strong> based on the current direct contact page, and the product is sold through ClickBank. The Better Business Bureau profile is <strong>not accredited</strong> and has a <strong>B- rating</strong> with 4 complaints reviewed as anecdotal complaint context.
+                </p>
+                <p class="text-slate-700 text-sm leading-relaxed font-medium">
+                    This doesn't mean YuSleep can't help. Many users report improvements. But it's worth understanding that the evidence base is built on individual ingredients rather than the finished product, and the transparency limitations are significant.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-ys-blueDark mb-12 text-center">YuSleep Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-ys-blueDark font-bold text-lg focus:outline-none">
+                        What exactly is YuSleep?
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180 text-ys-brand">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 border-t border-slate-100 pt-4 mt-2">
+                        YuSleep is a nano-enhanced liquid sleep supplement designed to help you fall asleep faster, stay asleep longer, and wake up feeling truly refreshed. It combines ten natural ingredients — including low-dose melatonin, 5-HTP, GABA, L-Theanine, and tart cherry extract — in a convenient nightly dropper.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-ys-blueDark font-bold text-lg focus:outline-none">
+                        How do I use YuSleep each night?
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180 text-ys-brand">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 border-t border-slate-100 pt-4 mt-2">
+                        Simply take two full droppers (2 mL) about 30 minutes before bedtime. Each bottle contains approximately 30 servings — a full month's supply.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-ys-blueDark font-bold text-lg focus:outline-none">
+                        When will I notice a difference?
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180 text-ys-brand">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 border-t border-slate-100 pt-4 mt-2">
+                        Many people notice improvements in sleep quality within the first few nights, while fuller benefits tend to build over 1 to 3 months of consistent nightly use. As with any natural supplement, individual results vary. Some users report mixed results or no difference.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-ys-blueDark font-bold text-lg focus:outline-none">
+                        Is YuSleep safe to take?
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180 text-ys-brand">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 border-t border-slate-100 pt-4 mt-2">
+                        YuSleep is made in a GMP-certified US facility using 100% natural, plant-based, Non-GMO ingredients. It contains no harsh sedatives and is not habit-forming. However, as with any dietary supplement, anyone who is pregnant, nursing, taking prescription medication, or with a diagnosed health condition should consult their doctor before use. <strong>Use extra caution with antidepressants and serotonin-affecting medication because the formula includes 5-HTP.</strong>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-ys-blueDark font-bold text-lg focus:outline-none">
+                        What if it doesn't work for me?
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180 text-ys-brand">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 border-t border-slate-100 pt-4 mt-2">
+                        Every order is backed by a full <strong>60-day, 100% money-back guarantee</strong> from the delivery date. If you're not satisfied for any reason, simply contact customer support for a full refund — even on empty bottles. Be sure to review the refund terms for return requirements and any deductions.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-ys-blueDark font-bold text-lg focus:outline-none">
+                        Where should I buy YuSleep?
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180 text-ys-brand">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 border-t border-slate-100 pt-4 mt-2">
+                        YuSleep should only be purchased through the <strong>official website</strong> to ensure you receive the authentic product and qualify for the 60-day money-back guarantee. Avoid unauthorized sellers where counterfeit products may be sold. An Amazon listing exists (ASIN B0FV34B71M), but seller identity was not verified as the company behind the official site.
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section class="py-24 bg-gradient-to-b from-ys-blueDark to-slate-900 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-ys-brand via-transparent to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Take Back Your Nights and Mornings? Claim Your YuSleep Discount</h2>
+            <p class="text-xl text-slate-300 mb-10 leading-relaxed">The discounted bundles tend to sell through quickly. Lock in your YuSleep supply now at up to 30%+ off, fully backed by the 60-day money-back guarantee.</p>
+            
+            <div class="mb-10 bg-slate-800/80 p-6 rounded-2xl inline-block border border-slate-700 backdrop-blur-sm shadow-xl">
+                <p class="text-amber-400 font-bold tracking-widest uppercase text-sm mb-2">YuSleep special discount</p>
+                <p class="text-slate-400 line-through text-lg">Regular Price: $69 per bottle</p>
+                <p class="text-4xl font-black text-white mt-1">Today Only: <span class="text-amber-400">from $39 per bottle</span></p>
+            </div>
+
+            <div>
+                <a href="https://yusleep-sleep.com/order.html" class="inline-block bg-ys-cta text-white hover:bg-ys-ctaHover text-2xl font-black py-5 px-12 rounded-full shadow-2xl shadow-orange-500/30 transform transition hover:-translate-y-1 hover:scale-105 mb-6 uppercase tracking-wide">
+                    Get Your YuSleep Bundle  &rsaquo;
+                </a>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-slate-400 mt-4 font-medium">
+                <div class="flex items-center"><span class="mr-2">🔒</span> Encrypted one-time checkout</div>
+                <div class="hidden sm:block text-slate-600">·</div>
+                <div>No subscription</div>
+                <div class="hidden sm:block text-slate-600">·</div>
+                <div>Free shipping on the 6-bottle bundle</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-12 text-sm border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="flex flex-wrap justify-center gap-4 text-slate-400 mb-6 font-medium">
+                <a href="#what-is" class="hover:text-ys-brand transition">What is YuSleep?</a> |
+                <a href="#how-it-works" class="hover:text-ys-brand transition">How Does YuSleep Work?</a> |
+                <a href="#ingredients" class="hover:text-ys-brand transition">Ingredients of YuSleep</a> |
+                <a href="#pricing" class="hover:text-ys-brand transition">YuSleep Benefits</a> |
+                <a href="#" class="hover:text-ys-brand transition">YuSleep Official Website</a>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-slate-500 mb-8">
+                <a href="privacy.html" class="hover:text-slate-300 transition">Privacy Policy</a> |
+                <a href="terms.html" class="hover:text-slate-300 transition">Terms Of Use</a> |
+                <a href="disclaimer.html" class="hover:text-slate-300 transition">Disclaimer</a> |
+               
+            </div>
+
+            <div class="space-y-4 max-w-5xl mx-auto text-xs text-slate-500 leading-relaxed text-justify md:text-center">
+                <p><strong>Disclaimer:</strong> The material shared on this page is for general education only and does not replace guidance from a licensed medical professional. If you plan to change your lifestyle or supplement routine, tell your doctor first and talk it through together. Direct any questions about a specific medical condition to your own physician.</p>
+                <p>The statements on this page have not been evaluated by the Food and Drug Administration, and this product is not intended to diagnose, treat, cure or prevent any disease. Anyone who is pregnant, nursing, on medication, or living with a health condition should check with a physician before use.</p>
+                <p>The views and the product described here reflect the author's opinion and are offered strictly on an "as is" basis, with no warranties of any kind. When looking into any health topic, verify what you read against other trustworthy sources, and always go over the details with your healthcare provider before acting on anything suggested on this page or using the product featured here.</p>
+                <p><strong>Advertising Disclosure:</strong> This is an independent review and marketing page, not the brand's official website. When you buy through a link on this page we may receive a referral commission, which never changes the price you pay.</p>
+            </div>
+            
+            <p class="pt-8 text-slate-600 font-medium">&copy; Copyright 2026 YuSleep — All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
